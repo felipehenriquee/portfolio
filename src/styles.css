@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+    font-family: bign;
+    src: url('./assets/font/bign.ttf') format("opentype");
+  }
+  @font-face {
+    font-family: caviar;
+    src: url('./assets/font/caviar.ttf') format("opentype");
+  }
+body{
+    background-color: white;
+}
+.centralizado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.backgroundImage{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.faixa{
+  position: absolute;
+  right: 0px;
+  width: 4px;
+  height: 100vh;
+  background-color: #FF4A1C;
+  top: 0;
+
+}

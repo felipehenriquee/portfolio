@@ -1,0 +1,21 @@
+.background{
+    width: 100%;
+    min-height: 120px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #37393A;
+}
+.rodape{
+    width: 360px;
+    flex-direction: row;
+    height: 100%;
+    min-height: 120px;
+    justify-content: space-between;
+}
+.rodape a {
+    color: black;
+}
+.rodape i:hover{
+    cursor: pointer;
+    color:#C3F73A;
+}

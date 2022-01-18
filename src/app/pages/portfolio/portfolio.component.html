@@ -1,0 +1,12 @@
+<div class="background centralizado">
+    <div class="cadaItem centralizado backgroundImage" *ngFor="let item of itens" [ngStyle]="{'background-image': 'url('+item.foto+')', 'color':item.cor, 'background-color': item.cor}"  >
+        <button class="mais centralizado" >Clique</button>
+        <div class="quadroPreto centralizado">
+            
+            <h5>{{item.titulo}}</h5>
+            <p style="color: white;">{{item.descricao}}</p>
+            <a [href]="item.link" [ngStyle]="{'color': item.cor=='#FF4A1C' ? verde : laranja}">Conheça</a>
+        </div>
+    </div>
+    
+</div>

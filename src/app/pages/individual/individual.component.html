@@ -1,0 +1,20 @@
+<div class=" centralizado corpo">
+   <div *ngIf="msg" >
+       <div *ngFor="let item of msg">
+        <p *ngIf="item.Quem=='usuario'"  >{{item.Mensagem}}</p>
+        
+       </div>
+       
+   </div>
+
+    <button (click)="pedir('14edb8b0-5c77-11ec-be0d-5f21db5f0075')">
+        Pedir pizza
+    </button>
+    <button (click)="pedir('hamburguer')">
+        Pedir hamburguer
+    </button>
+    <button (click)="cancelar()">
+        Cancelar
+    </button>
+    
+</div>

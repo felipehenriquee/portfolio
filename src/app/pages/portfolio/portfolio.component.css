@@ -1,0 +1,143 @@
+.background{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cadaItem{
+    width: 25%;
+    
+    height: 50vh;
+    min-height: 360px;
+    
+}
+.quadroPreto{
+    background-color: #37393A;
+    width: 70%;
+    height: 90%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 20px 1px black;
+    
+    padding: 5%;
+    display: none;
+    z-index: 100;
+}
+.quadroPreto h5{
+    margin-bottom: 10%;
+    font-family: 'bign';
+    font-size: 25px;
+    letter-spacing: 3px;
+    
+}
+.quadroPreto p{
+    font-family: 'caviar';
+    margin-bottom: 5%;
+}
+.quadroPreto a{
+    text-decoration: none;
+    font-family: 'bign';
+    font-size: 25px;
+    letter-spacing: 3px;
+    display: none;
+}
+.quadroPreto a:hover{
+    font-size: 28px;
+    
+}
+.cadaItem:hover > .quadroPreto{
+    display: flex;
+    animation: aparecer 0.5s linear forwards;
+    
+}
+.quadroPreto:hover > a{
+    display: flex;
+    
+}
+.mais{display: none;}
+@keyframes aparecer {
+    from{
+        
+        opacity: 0;
+    }
+    to{
+        
+        opacity: 1;
+    }
+}
+@keyframes aparecerLink {
+    from{
+        
+        display: none;
+    }
+    to{
+        
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .quadroPreto h5{
+        
+        font-size: 20px;
+        
+        
+    }
+    .quadroPreto p{
+        font-size: 15px;
+    }
+    .quadroPreto a{
+        
+        font-size: 20px;
+      letter-spacing: 3px;
+    
+    }
+}
+@media screen and (max-width: 950px) {
+    .quadroPreto p{
+        font-size: 12px;
+    }
+    .cadaItem{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .quadroPreto p{
+        font-size: 15px;
+    }
+    .cadaItem{
+        width: 50%;
+    }
+    .quadroPreto{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px) {
+    
+    .cadaItem{
+        width: 100%;
+    }
+    
+}
+@media only screen and (orientation: portrait) {
+    
+    
+    .cadaItem{
+        position: relative;
+    }
+    
+    .mais{
+        display: flex;
+        position: absolute;
+        background-color: transparent;
+        
+        font-size: 100px;
+        
+        color: white;
+        border: 0px;
+        
+        text-shadow: 1px 1px 1px black;
+        font-family: 'bign';
+    }
+   
+    
+}
