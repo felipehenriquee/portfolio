@@ -1,12 +1,16 @@
 {
-  "name": "nacional-gas",
+  "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "engines": {
+    "node": "14.17.1",
+    "npm":"6.14.13"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +26,7 @@
     "@google/model-viewer": "^1.9.2",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "bootstrap": "^4.6.1",
+    "express": "^4.17.2",
     "lodash": "^4.17.21",
     "rxjs": "~6.6.0",
     "socket.io-client": "^4.4.1",
